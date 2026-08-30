@@ -228,7 +228,8 @@ def classify_image(preprocessed_image_path: str, filename_hint: str, output_dir:
 
     # Generate Grad-CAM Heatmap
     from app.model.model_utils import generate_gradcam
-    heatmap_path = generate_gradcam(preprocessed_image_path, output_dir, {"predicted_disease": predicted_disease, "confidence": confidence, "class_idx": list(DISEASE_CLASSES).index(DISEASE_CLASSES.index(predicted_disease)) if predicted_disease in DISEASE_CLASSES else 0, "confidence": confidence})
+    class_idx_val = DISEASE_CLASSES.index(predicted_disease) if predicted_disease in DISEASE_CLASSES else 0
+    heatmap_path = generate_gradcam(preprocessed_image_path, output_dir, {"predicted_disease": predicted_disease, "confidence": confidence, "class_idx": class_idx_val, "confidence": confidence})
 
     # Build class list for probs (ensure all 8 classes are present)
     # The probs dict from predict_image may only have some classes; fill in missing

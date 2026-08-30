@@ -1,25 +1,6 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
-
-import {
-  Activity,
-  FileText,
-  Database,
-  Search,
-  Moon,
-  Sun,
-  RefreshCw,
-  Download,
-  AlertTriangle,
-  CheckCircle2,
-  ChevronRight,
-  Info,
-  Layers,
-  FileDigit,
-  ShieldAlert,
-  Check,
-} from "lucide-react";
 
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -30,6 +11,13 @@ import History from "./pages/History";
 import Reports from "./pages/Reports";
 import Navbar from "./components/Navbar";
 import ProtectedRoute from "./components/ProtectedRoute";
+import { useAuth } from "./contexts/AuthContext";
+
+const HomeRedirect = () => {
+  const { user, loading } = useAuth();
+  if (loading) return <div className="auth-loading">Loading...</div>;
+  return user ? <Navigate to="/dashboard" replace /> : <Navigate to="/login" replace />;
+};
 
 const App = () => {
   return (
@@ -85,7 +73,8 @@ const App = () => {
           }
         />
 
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<HomeRedirect />} />
+        <Route path="*" element={<HomeRedirect />} />
       </Routes>
     </div>
   );

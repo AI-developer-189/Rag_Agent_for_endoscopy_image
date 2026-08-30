@@ -10,7 +10,7 @@ from app.database import Patient, Prediction, User
 
 
 def get_patient_history(
-    patient_id: int,
+    patient_id: str,
     current_user_id: int,
     db: Session,
 ) -> Dict[str, Any]:
@@ -18,7 +18,7 @@ def get_patient_history(
     Tool 2: Retrieve patient clinical history and previous predictions.
 
     Args:
-        patient_id: Integer PK of the patient record
+        patient_id: String ID of the patient record (e.g., "PT-1234")
         current_user_id: ID of the authenticated user (for ownership check)
         db: SQLAlchemy session
 

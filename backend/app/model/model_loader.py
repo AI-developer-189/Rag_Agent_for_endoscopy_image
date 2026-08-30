@@ -3,7 +3,13 @@ model/model_loader.py
 Loads the public Kvasir-v2 vision classifier model from Hugging Face:
 mmuratarat/kvasir-v2-classifier
 """
+import os
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
+
 from transformers import AutoImageProcessor, AutoModelForImageClassification
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning, module="transformers")
 
 MODEL_NAME = "mmuratarat/kvasir-v2-classifier"
 CONFIDENCE_THRESHOLD = 0.85  # 85%

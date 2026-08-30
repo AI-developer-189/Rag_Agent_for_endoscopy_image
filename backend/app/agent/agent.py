@@ -328,7 +328,7 @@ class ClinicalAgent:
     def run(
         self,
         image_path: str,
-        patient_id: int,
+        patient_id: str,
         current_user_id: int,
         db,
         output_dir: str = "outputs",

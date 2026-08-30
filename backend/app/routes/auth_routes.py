@@ -14,6 +14,14 @@ router = APIRouter(prefix="/api/auth", tags=["Authentication"])
 @router.post("/signup", response_model=TokenResponse, status_code=status.HTTP_201_CREATED)
 def signup(payload: SignupRequest, db: Session = Depends(get_db)):
     """Register a new clinician account."""
+    # Handle both full_name and fullName from frontend
+    full_name = (payload.full_name or payload.fullName or "").strip()
+    if not full_name:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Full name is required."
+        )
+    
     # Check duplicate email
     existing = db.query(User).filter(User.email == payload.email.lower().strip()).first()
     if existing:
@@ -23,7 +31,7 @@ def signup(payload: SignupRequest, db: Session = Depends(get_db)):
         )
 
     user = User(
-        full_name=payload.full_name.strip(),
+        full_name=full_name,
         email=payload.email.lower().strip(),
         hashed_password=hash_password(payload.password),
     )

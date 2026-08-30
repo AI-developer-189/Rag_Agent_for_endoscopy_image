@@ -4,7 +4,7 @@ export const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 const api = axios.create({
   baseURL: API_BASE,
-  timeout: 30000,
+  timeout: 60000,
   withCredentials: true,
 });
 
@@ -17,6 +17,20 @@ api.interceptors.request.use(
     return config;
   },
   (error) => Promise.reject(error)
+);
+
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    const status = error.response?.status;
+    if (status === 401 && !error.config?.url?.includes("/api/auth/")) {
+      localStorage.removeItem("auth_token");
+      if (window.location.pathname !== "/login") {
+        window.location.href = "/login";
+      }
+    }
+    return Promise.reject(error);
+  }
 );
 
 export const login = async (email, password) => {
@@ -56,6 +70,11 @@ export const createPatient = async (patientData) => {
   return res.data;
 };
 
+export const deletePatient = async (patientId) => {
+  const res = await api.delete(`/api/patients/${patientId}`);
+  return res.data;
+};
+
 export const getPatientPredictions = async (patientId) => {
   const res = await api.get(`/api/patients/${patientId}/predictions`);
   return res.data;
@@ -65,5 +84,10 @@ export const downloadReport = async (studyId) => {
   const res = await api.get(`/api/reports/${studyId}`, {
     responseType: "blob",
   });
+  return res.data;
+};
+
+export const getReport = async (reportId) => {
+  const res = await api.get(`/api/reports/${reportId}`);
   return res.data;
 };

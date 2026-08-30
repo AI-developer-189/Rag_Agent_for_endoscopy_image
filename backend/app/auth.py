@@ -8,6 +8,12 @@ from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 from pydantic import BaseModel, EmailStr, field_validator
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except Exception:
+    pass
+
 from app.database import get_db, User
 
 # ─── Config ───────────────────────────────────────────────────────────────────
@@ -70,10 +76,16 @@ def get_current_user(
 
 # ─── Pydantic schemas ─────────────────────────────────────────────────────────
 class SignupRequest(BaseModel):
-    full_name: str
+    full_name: str = ""
+    fullName: str = ""
     email: str
     password: str
     confirm_password: str
+
+    @field_validator("full_name", "fullName", mode="before")
+    @classmethod
+    def combine_names(cls, v, info):
+        return v
 
     @field_validator("password")
     @classmethod

@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 from pydantic import BaseModel
 from typing import Optional, List
 
-from app.database import get_db, Patient, Prediction, User
+from app.database import get_db, Patient, Prediction, Study, ClinicalReport, User
 from app.auth import get_current_user
 
 router = APIRouter(prefix="/api/patients", tags=["Patients"])
@@ -126,14 +126,14 @@ def get_patient(
     return PatientResponse.model_validate(patient)
 
 
-@router.get("/{patient_ref}/predictions")
+@router.get("/{patient_id}/predictions")
 def get_patient_predictions(
-    patient_ref: str,
+    patient_id: str,
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
     """Get prediction history for a specific patient — ownership enforced."""
-    patient = db.query(Patient).filter(Patient.patient_ref == patient_ref).first()
+    patient = db.query(Patient).filter(Patient.id == patient_id).first()
     if not patient:
         raise HTTPException(status_code=404, detail="Patient not found.")
     if patient.user_id != current_user.id:
@@ -159,6 +159,27 @@ def get_patient_predictions(
         }
         for p in predictions
     ]
+
+
+@router.delete("/{patient_id}", status_code=status.HTTP_204_NO_CONTENT)
+def delete_patient(
+    patient_id: str,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
+    """Delete a patient record — ownership enforced."""
+    patient = _get_owned_patient(patient_id, db, current_user)
+
+    db.query(Prediction).filter(Prediction.patient_id == patient.id).delete()
+    db.query(ClinicalReport).filter(
+        ClinicalReport.study_id.in_(
+            db.query(Study.id).filter(Study.patient_id == patient.id)
+        )
+    ).delete(synchronize_session=False)
+    db.query(Study).filter(Study.patient_id == patient.id).delete()
+    db.delete(patient)
+    db.commit()
+    return None
 
 
 @router.put("/{patient_id}", response_model=PatientResponse)

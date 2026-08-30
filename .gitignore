@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+.env.*
+
+# Models / large files
+*.pt
+*.pth
+*.onnx
+*.h5
+*.keras
+*.safetensors
+
+# Datasets
+data/
+dataset/
+datasets/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+# Uploaded files
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Generated outputs
+backend/outputs/*
+!backend/outputs/.gitkeep
+
+# Local database
+backend/endoscopy.db
+
+# Large archives
+*.zip

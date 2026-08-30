@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <Link to="/" className="navbar-brand">
+      <Link to="/dashboard" className="navbar-brand">
         Endoscopy AI
       </Link>
       <div className="navbar-nav">
@@ -27,6 +27,7 @@ const Navbar = () => {
           <>
             <Link to="/dashboard" className="nav-item">Dashboard</Link>
             <Link to="/patients" className="nav-item">Patients</Link>
+            <Link to="/analyze" className="nav-item">Analyze</Link>
             <button
               onClick={handleLogout}
               className="nav-btn"

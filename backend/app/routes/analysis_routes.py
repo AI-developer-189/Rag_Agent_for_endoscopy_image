@@ -104,7 +104,7 @@ async def analyze(
         # ── Stage 2-3: Agent (Swin + Patient + RAG + LLM) ───────────────────
         agent_response = clinical_agent.run(
             image_path=image_path,
-            patient_id=patient.id,
+            patient_id=patient.id,  # String ID like "PT-1234"
             current_user_id=current_user.id,
             db=db,
             output_dir=OUTPUT_DIR,
@@ -265,37 +265,3 @@ async def analyze(
             detail="Unable to process the image. Please try again.",
         )
 
-
-@router.get("/patients/{patient_id}/predictions")
-def get_patient_predictions(
-    patient_id: int,
-    db: Session = Depends(get_db),
-    current_user: User = Depends(get_current_user),
-):
-    """Get prediction history for a specific patient — ownership enforced."""
-    patient = db.query(Patient).filter(Patient.id == patient_id).first()
-    if not patient:
-        raise HTTPException(status_code=404, detail="Patient not found.")
-    if patient.user_id != current_user.id:
-        raise HTTPException(status_code=403, detail="Access denied.")
-
-    predictions = (
-        db.query(Prediction)
-        .filter(Prediction.patient_id == patient_id)
-        .order_by(Prediction.created_at.desc())
-        .all()
-    )
-
-    return [
-        {
-            "id": p.id,
-            "study_id": p.study_id,
-            "predicted_disease": p.predicted_disease,
-            "confidence": round(p.confidence * 100, 1),
-            "low_confidence_warning": p.low_confidence_warning,
-            "severity": p.severity_results or {},
-            "heatmap_url": f"/static/outputs/{os.path.basename(p.heatmap_path)}" if p.heatmap_path else "",
-            "created_at": p.created_at.isoformat(),
-        }
-        for p in predictions
-    ]
