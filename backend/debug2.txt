@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app.database import engine, inspect as sa_inspector; import sqlite3; c = sqlite3.connect('endoscopy.db'); inspector = sa_inspector(c); existing_cols = {c2['name'] for c2 in inspector.get_columns('patients')}; print('Has name:', 'name' in existing_cols); print('Has full_name:', 'full_name' in existing_cols); c.close()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Multimodel\backend\app\database.py", line 202
+    if "patients" in existing_cols := {c["name"] for c in inspector.get_columns("patients")}:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot use assignment expressions with comparison

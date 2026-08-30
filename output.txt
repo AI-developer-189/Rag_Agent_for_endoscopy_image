@@ -1,0 +1,3 @@
+HTTP Error: 500
+Internal Server Error
+Not valid JSON

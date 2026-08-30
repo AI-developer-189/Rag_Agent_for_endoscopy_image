@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app.database import init_db; init_db()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Multimodel\backend\app\database.py", line 202
+    if "patients" in existing_cols := {c["name"] for c in inspector.get_columns("patients")}:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot use assignment expressions with comparison

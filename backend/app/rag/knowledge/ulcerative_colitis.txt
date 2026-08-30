@@ -1,0 +1,64 @@
+# Ulcerative Colitis - Clinical Guidelines
+
+## Overview
+Ulcerative Colitis (UC) is a chronic inflammatory bowel disease characterized by continuous mucosal inflammation limited to the colon and rectum. Disease extent determines clinical classification and management.
+
+## Disease Extent Classification
+- **Ulcerative proctitis**: Inflammation limited to rectum (≤10cm from anal verge)
+- **Proctosigmoiditis**: Inflammation involving rectum and sigmoid colon
+- **Left-sided colitis**: Inflammation extending to splenic flexure (≤40cm)
+- **Pancolitis**: Involvement of entire colon (>40cm)
+
+## Risk Factors
+- Onset typically age 15-30 or 50-70
+- Familial aggregation (first-degree relatives have 5-10x increased risk)
+- Jewish ancestry (higher prevalence)
+- Smoking: paradoxically protective for UC (but increases Crohn's risk)
+- Appendectomy early in life may increase risk
+
+## Clinical Guidelines
+
+### Mayo Score for Disease Activity
+- **0**: Remission
+- **1**: Mild (symptoms present but minimal)
+- **2**: Moderate
+- **3**: Severe (frequent bloody stools, systemic symptoms)
+
+### Treatment by Disease Severity
+
+#### Mild (Mayo Score 1)
+- First-line: Oral 5-aminosalicylate (5-ASA) such as mesalamine
+- Rectal therapy (enema or suppository) for proctitis
+- Avoid NSAIDs and sulfonamides
+
+#### Moderate (Mayo Score 2)
+- First-line: Oral 5-ASA + rectal therapy
+- Corticosteroids if 5-ASA inadequate
+- Consider azathioprine/6-MP for steroid-sparing
+
+#### Severe (Mayo Score 3)
+- Hospital admission for IV corticosteroids or cyclosporine
+- Consider anti-TNF therapy (infliximab, adalimumab) if steroid-refractory
+- Early gastroenterology consultation
+- Watch for toxic megacolon, colorectal cancer risk
+
+### Extra-Intestinal Manifestations
+- Arthralgias/arthritis (5-20% of patients)
+- Primary sclerosing cholangitis (5-10% of UC patients)
+- Skin manifestations (erythema nodosum, pyoderma gangrenosum)
+- Ocular inflammation (uveitis, scleritis)
+- Laboratory monitoring: CBC, CMP, LFTs every 3-6 months
+
+### Surgical Indications
+- Steroid-refractory severe UC
+- Fulminant colitis with failure of medical therapy
+- Toxic megacolon or perforation
+- Dysplasia on surveillance histology
+- Recurrent severe flares affecting quality of life
+
+### Colorectal Cancer Surveillance
+- After 8-10 years of pancolitis: surveillance colonoscopy every 1-3 years
+- After 15-20 years of left-sided colitis: surveillance every 3-5 years
+- Enhanced surveillance (every 1 year) if primary sclerosing cholangitis coexists
+- Random biopsies every 10cm across colon + targeted biopsies of visible lesions
+- Repeat colonoscopy with chromoendoscopy may improve dysplasia detection

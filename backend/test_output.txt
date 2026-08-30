@@ -1,0 +1,18 @@
+C:\Users\Shakthipriya\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\__init__.py:109: RequestsDependencyWarning: urllib3 (2.0.7) or chardet (7.5.1)/charset_normalizer (3.3.2) doesn't match a supported version!
+  warnings.warn(
+2026-08-14 05:54:02.046671: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-08-14 05:54:05.381157: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+GET /health: 200 {'status': 'healthy'}
+GET /api/auth/me (no auth): 401
+GET /api/patients (no auth): 401 {'detail': 'Authentication required.'}
+POST /api/auth/signup: 201
+  Response: {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0IiwiZW1haWwiOiJ0ZXN0dXNlcjJAZXhhbXBsZS5jb20iLCJleHAiOjE3ODY3NTM0NTgsImlhdCI6MTc4NjY2NzA1OH0.JKVnLwotDl8yxhaYwauW6m7-HheI5LhC7wkRf2PHH3g', 'token_type': 'bearer', 'user': {'id': 4, 'full_name': 'Test User', 'email': 'testuser2@example.com', 'created_at': '2026-08-14T00:24:17.790840'}}
+POST /api/auth/login: 200
+  Token: eyJhbGciOiJIUzI1NiIs...
+GET /api/auth/me with token: 200 {'id': 4, 'full_name': 'Test User', 'email': 'testuser2@example.com', 'created_at': '2026-08-14T00:24:17.790840'}
+GET /api/patients with token: 200 []
+POST /api/patients: 201
+  Patient ref: PT-853747
+  Full name: Test Patient
+GET /api/patients/PT-853747/predictions: Traceback (most recent call last):
+  File "C:\Users\Shakthipriya\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context

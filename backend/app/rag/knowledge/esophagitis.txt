@@ -1,0 +1,39 @@
+# Esophagitis - Clinical Guidelines
+
+## Overview
+Esophagitis is inflammation of the esophageal mucosa, often caused by gastroesophageal reflux disease (GERD), medications, or infections. Classification uses the Los Angeles (LA) system: Grade A (one or more mucosal breaks <5mm), Grade B (mucosal breaks >5mm), Grade C (confluent mucosal breaks involving <75% of circumference), Grade D (confluent mucosal breaks involving >=75% of circumference).
+
+## Risk Factors
+- Chronic GERD or acid reflux
+- Hiatal hernia
+- Obesity
+- Smoking
+- Alcohol consumption
+- NSAIAs and aspirin use
+- Scleroderma and other connective tissue diseases
+- Hiatal hernia
+- Zollinger-Ellison syndrome
+
+## Clinical Guidelines
+
+### Los Angeles Classification & Grading
+- **Grade A**: Separate mucosal erosions ≤5 mm
+- **Grade B**: Mucosal erosions >5 mm without continuous mucosal involvement
+- **Grade C**: Confluent erosions involving <75% of circumferential mucosa
+- **Grade D**: Confluent erosions involving ≥75% of circumferential mucosa
+
+### PPI Therapy Guidelines
+- **Initial treatment**: High-dose PPI (e.g., Pantoprazole 40mg IV BID or PO BID) for 4-8 weeks
+- **Maintenance**: Low-dose PPI (e.g., Pantoprazole 20mg QD) after symptom resolution
+- **Healing rates**: ~80-90% with 8 weeks of PPI therapy
+
+### Endoscopic Surveillance
+- **Erosive esophagitis**: Repeat endoscopy in 6-8 weeks after PPI therapy to confirm healing
+- **Barrett's esophagus surveillance**: Every 3 years if Barrett's identified (≥3cm intestinal metaplasia)
+- **No Barrett's, Grade A esophagitis**: Can repeat in 6 months or transition to surveillance every 3 years
+
+### Treatment Algorithms
+1. Empiric PPI trial for 4-8 weeks in typical reflux symptoms
+2. If no response: H2 blocker add-on or biliary referral
+3. If Barrett's identified: Surveillance endoscopy schedule based on intestinal metaplasia length
+4. Consider H. pylori testing if PUD symptoms present

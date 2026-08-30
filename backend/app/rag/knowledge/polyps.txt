@@ -1,0 +1,39 @@
+# Polyps - Clinical Guidelines
+
+## Overview
+Colonic polyps are abnormal growths of tissue lining the colon. They are very common, especially in adults over age 50. Most polyps are benign, but some can become cancerous over time.
+
+## Risk Factors
+- Age > 50 years
+- Family history of polyps or colorectal cancer
+- Personal history of inflammatory bowel disease
+- High-fat diet, red meat consumption
+- Smoking and alcohol use
+- Obesity and sedentary lifestyle
+
+## Clinical Guidelines
+
+### Surveillance Intervals by Polyp Type
+- **Tubular adenomas (1-2, <10mm)**: Surveillance colonoscopy in 5-7 years
+- **Tubular adenomas (3-4, any size) or sessile serrated polyps**: Surveillance in 3 years
+- **Villous adenomas or adenomas >= 10mm**: Surveillance in 3 years
+- **High-grade dysplasia**: Surveillance in 3 years
+- **>5 adenomas or villous features**: Consider genetic testing (Lynch syndrome, FAP)
+
+### Detection Quality Metrics
+- Adenoma detection rate (ADR): ≥25% for men, ≥15% for women
+- Cecal intubation rate: 95%+
+- Withdrawal time: ≥6 minutes recommended
+
+### Management
+- Complete endoscopic polypectomy recommended for all removable polyps
+- Cold snare polypectomy for polyps <10mm
+- Cold biopsy or hot snare for polyps 10-20mm
+- EMR or ESD for large sessile polyps >20mm
+- Histopathology required for all excised polyps
+
+### Red Flags Requiring Urgent Evaluation
+- Iron-deficiency anemia
+- Positive fecal immunochemical test (FIT)
+- Rectal bleeding
+- Family history of colorectal cancer or hereditary polyposis syndromes

@@ -1,0 +1,35 @@
+# Core API
+fastapi==0.111.0
+uvicorn==0.30.1
+python-multipart==0.0.9
+python-dotenv==1.0.1
+
+# Image processing
+opencv-python-headless==4.9.0.80
+numpy==1.26.4
+Pillow==10.3.0
+
+# ML - Swin Transformer + Grad-CAM
+torch==2.3.0
+torchvision==0.18.0
+transformers==4.41.2
+timm==1.0.3
+huggingface-hub==0.23.2
+
+# RAG - Semantic search
+sentence-transformers==3.0.1
+
+# Auth - JWT + password hashing
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# Database
+sqlalchemy==2.0.31
+
+# PDF report
+reportlab==4.2.2
+
+# Agentic AI - LangGraph + Gemini
+langgraph==0.1.4
+langchain-core==0.2.10
+google-generativeai==0.7.2

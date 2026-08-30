@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app.main import app; print('App loaded OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Multimodel\backend\app\main.py", line 9, in <module>
+    from app.routes.analysis_routes import router as analysis_router
+  File "F:\Multimodel\backend\app\routes\analysis_routes.py", line 16, in <module>
+    from app.agent.agent import clinical_agent
+  File "F:\Multimodel\backend\app\agent\agent.py", line 19, in <module>
+    from app.agent.prediction_tool import run_prediction_tool
+  File "F:\Multimodel\backend\app\agent\prediction_tool.py", line 8, in <module>
+    from app.model.model_utils import build_prediction_response
+  File "F:\Multimodel\backend\app\model\model_utils.py", line 15, in <module>
+    from app.model.model_loader import (
+    ...<2 lines>...
+    )
+  File "F:\Multimodel\backend\app\model\model_loader.py", line 6, in <module>
+    from transformers import AutoImageProcessor, AutoModelForImageClassification
+ModuleNotFoundError: No module named 'transformers'

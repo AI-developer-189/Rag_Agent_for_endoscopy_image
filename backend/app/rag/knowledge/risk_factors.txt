@@ -1,0 +1,41 @@
+# Gastrointestinal Risk Factors Reference
+
+## Patient Age Risk Stratification
+- **Under 40**: Lower baseline risk; consider alternative diagnoses first
+- **40-60**: Average risk; standard screening guidelines apply
+- **60+**: Elevated risk for adenocarcinoma, polyps, and IBD mimicry; more aggressive surveillance warranted
+
+## Lifestyle Risk Factors
+- **Tobacco use**: Increases risk of gastric cancer, esophageal cancer, peptic ulcer disease
+- **Alcohol consumption**: >2 drinks/day increases risk of esophageal, gastric, and colorectal cancer
+- **Diet high in processed/red meat**: Associated with increased colorectal cancer risk
+- **Low fiber diet**: Associated with increased colorectal cancer risk
+- **Obesity**: Increased risk of esophageal adenocarcinoma, colorectal cancer
+- **Sedentary lifestyle**: Associated with increased colorectal cancer risk
+
+## Medication Risk Factors
+- **NSAIDs/Sulfonamides**: Increased risk of gastric ulcer, small bowel injury, colonic ulceration
+- **Corticosteroids**: Increased risk of peptic ulcer, especially with NSAID co-use
+- **Aspirin**: Low-dose aspirin increases gastrointestinal bleeding risk
+- **Bisphosphonates**: Pill-induced esophageal injury with poor adherence to upright positioning
+- **Iron supplements**: Can cause gastric mucosal irritation, mimic gastritis
+
+## Family History Risk Factors
+- **First-degree relative with colorectal cancer**: 2x increased risk; start screening 10 years before relative's diagnosis age
+- **Family history of familial adenomatous polyposis (FAP)**: Early surveillance required (pediatric onset)
+- **Family history of Lynch syndrome**: Increased risk of colorectal and endometrial cancer; microsatellite instability testing
+- **Family history of IBD**: Increased risk of UC or Crohn's disease mimicry
+
+## Endoscopic Findings with Higher Risk
+- **Large polyps ≥10mm**: Higher malignant potential; may require EMR rather than simple polypectomy
+- **Sessile serrated polyposis**: Increased risk of right-sided colorectal cancer; intensive surveillance needed
+- **Polyps with high-grade dysplasia**: Upgrade surveillance interval to 3 years or less
+- **Non-lifting sign**: May indicate submucosal invasion; surgical referral required
+- **Barrett's esophagus columnar-lined mucosa ≥3cm**: Enhanced surveillance every 3 years with biopsies
+
+## Clinical Decision Support Triggers
+- Age ≥50 with new-onset GI symptoms: Lower threshold for endoscopy
+- Unexplained iron-deficiency anemia: Urgent GI evaluation
+- Positive fecal occult blood test (gFIT): Follow-up colonoscopy recommended
+- Family history + age >40: Earlier and more frequent screening
+- Long-standing UC (>8-10 years): Initiate colorectal cancer surveillance

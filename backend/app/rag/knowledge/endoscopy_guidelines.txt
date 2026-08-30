@@ -1,0 +1,38 @@
+# Endoscopy Clinical Guidelines - General Overview
+
+## Colonoscopy Preparation
+- **Bowel preparation**: PEG electrolyte solution or split-dose preparation
+- **Quality metric**: Boston Bowel Preparation Scale (BBPS) score ≥2 per segment
+- **Cecal intubation rate target**: ≥95%
+- **Withdrawal time**: ≥6 minutes for optimal polyp detection
+
+## Upper Endoscopy Guidelines
+- **Indications**: Dysphagia, odynophagia, GI bleeding, anemia, unexplained weight loss
+- **Biopsy protocol**: Systematic antrectomy biopsy for H. pylori; gastric/duodenal biopsies for dysplasia in Barrett's
+- **Sedation guidelines**: Use lowest effective dose; monitor cardiopulmonary function
+- **Post-procedure**: NPO until gag reflex returns; discharge criteria met
+
+## Endoscopic Hemostasis
+- **First-line**: Clipping, thermal coagulation, injection therapy
+- **Adrenaline (1:10,000) injection** followed by thermal or mechanical therapy
+- **Clips**: First-line for ulcer bleeding; effective for post-polypectomy bleeding
+- **Surgery consideration**: Failure of endoscopic hemostasis, ongoing hemodynamic instability
+
+## Polypectomy Standards
+- **Cold snare**: Polyps <10mm, tubular adenomas
+- **Cold biopsy**: Polyps <5mm, random sampling
+- **Hot snare**: Polyps 10-20mm with appropriate endpoint technique
+- **EMR**: Sessile polyps >20mm, laterally spreading lesions
+- **Histopathology**: Required for all polyps >1mm
+
+## Adenoma Detection Quality Metrics
+- **ADR**: ≥25% average (men), ≥15% average (women) across endoscopists
+- **Per cecum ADR**: Report separately for each colonoscopy
+- **Mean number of adenomas per colonoscopy**: Benchmark auditing
+- **Serrated polyp detection rate**: Emerging quality metric
+
+## Post-Endoscopy Care
+- **Discharge criteria**: Stable vital signs, able to tolerate oral intake, gag reflex present
+- **Post-polypectomy precautions**: Avoid heavy lifting, no aspirin/NSAIDs for 48-72 hours (per protocol)
+- **Follow-up scheduling**: Based on adenoma histology, number, size, and surveillance interval
+- **Red flags**: Severe abdominal pain, fever, rectal bleeding >1 hour post-procedure

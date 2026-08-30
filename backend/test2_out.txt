@@ -1,0 +1,3 @@
+C:\Users\Shakthipriya\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\__init__.py:109: RequestsDependencyWarning: urllib3 (2.0.7) or chardet (7.5.1)/charset_normalizer (3.3.2) doesn't match a supported version!
+  warnings.warn(
+2026-08-14 05:15:43.045960: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
