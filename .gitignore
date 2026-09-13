@@ -48,3 +48,4 @@ backend/endoscopy.db
 
 # Large archives
 *.zip
+backend/uploads/
